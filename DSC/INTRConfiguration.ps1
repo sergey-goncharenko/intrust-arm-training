@@ -196,19 +196,19 @@
 			DependsOn = "[JoinDomain]JoinDomain"
         }
 		
-		InstallInTrust InstallInTrustTask
-        {
-            CM = $CM
-            Adminpass = $admpwd
-			DomainName = $DomainName
-            Credential = $DomainCreds
-			PSName = $PSName
-			MailFromAddress = $SMTPMailFrom
-			DefaultOperatorAddress = $DefaultOperatorAddress
-			ScriptPath = $PSScriptRoot
-            Ensure = "Present"
-            DependsOn = "[xCredSSP]Server"
-        }
+	#	InstallInTrust InstallInTrustTask
+    #    {
+    #        CM = $CM
+    #        Adminpass = $admpwd
+	#		DomainName = $DomainName
+    #        Credential = $DomainCreds
+	#		PSName = $PSName
+	#		MailFromAddress = $SMTPMailFrom
+	#		DefaultOperatorAddress = $DefaultOperatorAddress
+	#		ScriptPath = $PSScriptRoot
+    #        Ensure = "Present"
+    #        DependsOn = "[xCredSSP]Server"
+    #    }
 
         DownloadAndRunSysmon DwnldSysmon
         {
