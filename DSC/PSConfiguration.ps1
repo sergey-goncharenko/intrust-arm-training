@@ -241,5 +241,5 @@
 #            Ensure = "Present"
 #            DependsOn = "[InstallITSS]InstallITSSTask"
 #        }
-#    }
+    }
 }
