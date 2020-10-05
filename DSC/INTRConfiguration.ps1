@@ -214,7 +214,7 @@
         {
             CM = "CM"
             Ensure = "Present"
-            DependsOn = "[InstallInTrust]InstallInTrustTask"
+            DependsOn = "[DownloadSCCM]DownLoadSCCM"
         }
 
         FileReadAccessShare IntrustSMBShare
